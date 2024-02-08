@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "demo-notebook-limit"
+version = "0.1.0"
+description = ""
+authors = ["franck cussac <franck.cussac@gmail.com>"]
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scikit-learn = "^1.4.0"
+pandas = "^2.2.0"
+pyarrow = "^15.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "src.main:main"
