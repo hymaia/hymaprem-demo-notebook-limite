@@ -16,6 +16,7 @@ pyarrow = "^15.0.0"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core"]
